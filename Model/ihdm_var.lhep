@@ -1,0 +1,115 @@
+%%%%%%%%%%%%%% INDEPNDENT PARAMETERS %%%%%%%%%%%%%%
+
+parameter  	pi=acos(-1),
+ 		alphaSMZ=0.1184:'Srtong alpha(MZ) for running mass calculation',
+ 		EE =0.31343:    'elecromagnetic constant',
+  		Q  = 100:       'QCD scale'.
+
+parameter   	Mm = 0.1057:	'muon mass',
+		Mu = 0.003:	'u-quark mass',
+		Md = 0.005:	'd-quark mass',
+ 		Mtau = 1.777:	'tau-lepton mass',
+		Maux=1,
+		Ms = 0.200:	's-quark mass',
+   		McMc =1.23:	'Mc(Mc)  MS-BAR',
+		MbMb =4.25:	'Mb(Mb)  MS-BAR',
+ 		Mtop = 172.5:	't-quark pole mass',
+ 		MH   = 125:	'higgs mass',
+ 		MZ = 91.188:    'Z-boson mass',
+ 		MW = 80.385:    'W-boson mass',
+ 		wtop = 1.59:	't-quark width (tree level 1->2x)',
+ 		wZ = 2.49444:   'Z-boson width        (tree level 1->2x)',
+ 		wW = 2.08895:   'W-boson width        (tree level 1->2x)'.
+		
+		
+parameter       s12 = 0.221: 	'Parameter of C-K-M matrix (PDG-94)',
+	   	s23 = 0.040: 	'Parameter of C-K-M matrix (PDG-94)',
+           	s13 = 0.0035  : 'Parameter of C-K-M matrix (PDG-94)'.
+
+
+%%%%%%%%%%%%%% DEPNDENT PARAMETERS %%%%%%%%%%%%%%%%%%%
+
+
+external_func(alphaQCD,1).
+
+parameter GG=sqrt(4*pi*alphaQCD(Q)).
+ 
+parameter  	Mcp 	= McMc*(1+4/3*alphaQCD(McMc)/pi):'1 loop formula like in Hdecay',
+	   	Mbp 	= MbMb*(1+4/3*alphaQCD(MbMb)/pi):'1 loop formula like in Hdecay',
+		alphaE0	=1/137.036:'electromagnetic constant at zero energy',
+		CW = MW/MZ:  		'on-shell cos of the Weinberg angle',
+		SW = sqrt(1-CW**2): 	'sin of the Weinberg angle',
+		GF = EE**2/(2*SW*MW)**2/Sqrt2: 'Fermi Constant',
+		vv=2*MW/EE*SW.
+
+
+parameter  	c12  = sqrt(1-s12**2): 	'parameter  of C-K-M matrix',
+           	c23  = sqrt(1-s23**2): 	'parameter  of C-K-M matrix',
+           	c13  = sqrt(1-s13**2): 	'parameter  of C-K-M matrix'.
+           	
+			  
+external_func(initQCD5,4). 
+parameter LamQCD=initQCD5(alphaSMZ,McMc,MbMb,Mtop).
+
+external_func(MbEff,1). 
+external_func(MtEff,1). 
+external_func(McEff,1). 
+
+parameter	Mb=MbEff(Q),
+		Mt=MtEff(Q),
+		Mc=McEff(Q).
+
+		   
+do_if CKMdim==3.
+parameter  Vud = c12*c13                : 'C-K-M matrix element',
+           Vus = s12*c13                : 'C-K-M matrix element',
+           Vub = s13     	            : 'C-K-M matrix element',
+           Vcd = (-s12*c23-c12*s23*s13) : 'C-K-M matrix element',
+           Vcs = (c12*c23-s12*s23*s13)  : 'C-K-M matrix element',
+           Vcb = s23*c13                : 'C-K-M matrix element',
+           Vtd = (s12*s23-c12*c23*s13) 	: 'C-K-M matrix element',
+           Vts = (-c12*s23-s12*c23*s13)	: 'C-K-M matrix element',
+           Vtb = c23*c13  	            : 'C-K-M matrix element'.
+OrthMatrix( { {Vud,Vus,Vub}, {Vcd,Vcs,Vcb}, {Vtd,Vts,Vtb}} ).
+
+alias ckm(1,1)=Vud, ckm(2,1)=Vus, ckm(3,1)=Vub,
+      ckm(1,2)=Vcd, ckm(2,2)=Vcs, ckm(3,2)=Vcb,
+      ckm(1,3)=Vtd, ckm(2,3)=Vts, ckm(3,3)=Vtb.
+
+do_else_if CKMdim==2.
+parameter  Vud = c12            : 'C-K-M matrix element',
+           Vus = s12    	    : 'C-K-M matrix element',
+           Vcs = Vud     	    : 'C-K-M matrix element',
+           Vcd = -Vus           : 'C-K-M matrix element'.
+let        Vub = 0, Vcb = 0, Vtd = 0, Vts = 0, Vtb = 1.
+OrthMatrix({{Vud,Vus}, {Vcd,Vcs}}).
+
+do_else_if CKMdim==1.
+let  Vub=0, Vcb=0, Vtd=0, Vts=0, Vtb=1, Vud=1, Vus=0, Vcs=1, Vcd=0.
+end_if.
+
+%%%%%%%%%%%%%%%% Dark Matter Independent Parameters  %%%%%%%%%%%%%%%%%
+           	
+parameter    	Mh1 = 100:  'Mass of Dark Matter',
+		Mh2 = 120:  'Mass od odd neutral particle',
+		Mhc = 130:  'Mass of charged odd scalar particle',
+		ld345 = -0.2: 'Combination of cuartic coupling constant ld3+ld4+ld5',
+		ld = 1: 'Quartic coupling Dark Matter'.
+				
+
+%%%%%%%%%%%%%%%% Dark Matter  Dependent Parameters  %%%%%%%%%%%%%%%%%
+
+
+parameter   	md2 = (1/2)*ld345*vv**2 - Mh1**2: 'squered mass parameter of the dark matter lagrangian sector',
+		ld3 = (2/vv**2)*(Mhc**2 + (1/2)*ld345*vv**2 - Mh1**2): 'ld3 quartic coupling constant between odd particle and higgs',
+		ld4 = (1/vv**2)*(Mh2**2 + Mh1**2 - 2*Mhc**2): 'ld4 quartic coupling constant between odd particle and higgs',
+		ld5 = (1/vv**2)*(Mh1**2 - Mh2**2): 'ld5 quartic coupling constant between odd particle and higgs'.
+
+%%%%%%% Coupling constants %%%%%%
+
+let gw = EE/SW.    %Weak coupling constant
+let gy = EE/CW.   %U(1)Y coupling constant
+
+
+
+

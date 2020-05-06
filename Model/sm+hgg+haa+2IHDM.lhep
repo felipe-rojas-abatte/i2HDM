@@ -1,0 +1,34 @@
+%
+% Standard Model - unitary and t'Hooft-Feynman gauges.
+%
+option chepPDWidth=200.
+
+keys gauge_fixing=Feynman.
+keys CKMdim=1.
+use ihdm_tex.
+
+do_if gauge_fixing==Feynman.
+    model 'SM+HAA+HGG(tFG))'/4.
+do_else_if gauge_fixing==unitary.
+    model 'SM+HAA+HGG(UG)'/3.
+do_else.
+    write('Error: the key "gauge" should be either "Feynman" or "unitary".').
+    quit.
+end_if.
+
+option ReduceGamma5=0.
+let g5=gamma5.
+
+read ihdm_var.     % parameters of the model
+read ihdm_prt.     % set of particles
+read ihdm_let.     % multiplets
+read ihdm_gfi.     % gauge fields interaction
+read ihdm_gmi.     % gauge-matter interaction terms
+read ihdm_higgs.   % higgs sector: kinetics, interaction and mass terms 
+read ihdm_dmi.     % Dark Matter Interaction terms
+read ihdm_loop.    % Loop vertex HGG and HAA.
+
+	
+SetAngle(1-SW**2=CW**2).
+SetEM(A,EE).   % Checking electric charge conservation
+CheckHerm.     % Testing Hermitian conjugate terms

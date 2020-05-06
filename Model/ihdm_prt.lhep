@@ -1,0 +1,41 @@
+%%%%%%%%%%%%%%%% Particles of the model %%%%%%%%%%%%%%%%%%%%%
+
+do_if gauge_fixing==Feynman.
+
+vector  
+	A/A: (photon, gauge),
+	Z/Z:('Z boson', mass MZ, width wZ, gauge),
+	G/G: (gluon, color c8, gauge),
+	'W+'/'W-': ('W boson', mass MW , width wW , gauge).
+
+do_else.
+
+vector  
+	A/A: (photon, gauge),
+	Z/Z:('Z boson', mass MZ, width wZ),
+	G/G: (gluon, color c8, gauge),
+	'W+'/'W-': ('W boson', mass MW, width wW).
+
+end_if.
+
+spinor 		n1:(neutrino,left), 	   e1:(electron),
+		n2:('mu-neutrino',left),   e2:(muon, mass Mm),
+		n3:('tau-neutrino',left),  e3:('tau-lepton', mass Mtau).
+
+spinor		u:('u-quark',color c3, mass Mu),
+		d:('d-quark',color c3, mass Md),
+		c:('c-quark',color c3, mass Mcp),
+		s:('s-quark',color c3, mass Ms),
+		t:('t-quark',color c3, mass Mtop, width wtop),
+		b:('b-quark',color c3, mass Mbp).
+
+	
+scalar 		H/H: (Higgs, mass MH, width wH = auto),    
+	        '~h1'/'~h1': ('Dark Matter', mass Mh1, width wh1=0),  %odd particle
+	        '~h2'/'~h2': ('Neut Odd Higgs', mass Mh2, width wh2=auto), %odd particle
+	        '~h+'/'~h-': ('Charged higgs', mass Mhc, width wHC=auto).  % odd particle 
+
+prtcproperty pdg:(H=25, '~h1'=1000022, '~h+'=1000025, '~h-'=1000026, '~h2'=1000027).
+
+
+

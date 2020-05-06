@@ -1,0 +1,17 @@
+%%%%%%%%%%%% Dark Matter sector %%%%%%%%%%%%
+
+let vphi = {-i*'~h+', ('~h1' + i*'~h2')/Sqrt2}, Vphi = {i*'~h-', ('~h1'-i*'~h2')/Sqrt2}.
+
+let Dvphi^mu^a = (deriv^mu + i*gy/2*B1^mu)*vphi^a + i*gw/2*taupm^a^b^c*WW1^mu^c*vphi^b.
+
+let DVphi^mu^a = (deriv^mu - i*gy/2*B1^mu)*Vphi^a - i*gw/2*taupm^a^b^c*WW2^mu^c*Vphi^b.
+
+lterm (DVphi*Dvphi) + md2*(Vphi*vphi) - ld*(Vphi*vphi)**2.  
+
+
+%%%%%%%%% Coupling between Dark Matter and higgs %%%%%%%%
+
+lterm  -ld3*(Vphi*vphi)*(PP*pp).
+lterm  -ld4*(Vphi*pp)*(PP*vphi).
+lterm  -(ld5/2)*((PP*vphi)*(PP*vphi) + (Vphi*pp)*(Vphi*pp)).
+

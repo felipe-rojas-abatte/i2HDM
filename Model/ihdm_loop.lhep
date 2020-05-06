@@ -1,0 +1,52 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% HGG + HAA PART %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+external_func(McRun,1).
+external_func(MbRun,1).
+external_func(MtRun,1).
+external_func(HggF,1).
+external_func(HggV,1).
+external_func(Hgam1F,1).
+external_func(alphaQCD,1).
+
+parameter	aQCD =alphaQCD(MH)/pi.
+
+
+parameter 	Qu=2/3, Qd=-1/3,
+		tau2c =(MH/2/McRun(MH/2))**2,
+		tau2b =(MH/2/MbRun(MH/2))**2,
+		tau2t =(MH/2/MtRun(MH/2))**2,
+		tau2l =(MH/2/Mtau)**2,
+		tau2W =(MH/2/MW)**2.
+		
+parameter	Rqcd=1+149/12*aQCD+68.6482*aQCD**2-212.447*aQCD**3,
+		Cq=1+11/4*aQCD,
+		lnTop=2*log(Mtop/MH),
+		Ctop=1+11/4*aQCD+ 
+		(6.1537-2.8542*lnTop)*aQCD**2
+		+(10.999-17.93*lnTop+5.47*lnTop**2)*aQCD**3.
+
+
+parameter LmbdAA=
+		-alphaE0/(8*pi)*EE/(2*MW*SW)*cabs( 
+		3*Qu**2*(HggF(tau2c)*(1+aQCD*Hgam1F(tau2c)) 			
+		+HggF(tau2t)*(1+aQCD*Hgam1F(tau2t)))
+		+3*Qd**2*HggF(tau2b)*(1+aQCD*Hgam1F(tau2b))
+		+HggF(tau2l)+HggV(tau2W)).
+
+parameter LmbdGG=    		
+		-aQCD/16*sqrt(Rqcd)*EE/(2*SW*MW)*cabs(
+		 HggF((MH/2/Mcp)**2)*Cq
+		+HggF((MH/2/Mbp)**2)*Cq 
+		+HggF((MH/2/Mtop)**2)*Ctop).
+
+lterm 1/vv*LmbdAA*pp*PP*F**2
+ 	where
+	F=deriv^mu*A^nu-deriv^nu*A^mu.
+
+lterm 1/vv*LmbdGG*pp*PP*F**2
+ 	where
+	F=deriv^mu*G^nu^a-deriv^nu*G^mu^a+i*GG*f_SU3^a^b^c*G^mu^b*G^nu^c.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

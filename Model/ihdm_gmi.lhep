@@ -1,0 +1,58 @@
+%%%%% left fermion interaction with gauge fields %%%%%
+
+lterm  	anti(psi)*gamma*(1-g5)/2*(i*deriv-gw*taupm*WW1/2-Y*gy*B1)*psi
+		where 
+			psi=l1,  Y=-1/2;
+			psi=l2,  Y=-1/2;
+			psi=l3,  Y=-1/2;
+			psi=q1a, Y= 1/6;
+			psi=q2a, Y= 1/6;
+			psi=q3a, Y= 1/6.
+
+
+%%%%% right fermion interaction with gauge fields %%%%%
+
+lterm  	anti(psi)*gamma*(1+g5)/2*(i*deriv - Y*gy*B1)*psi
+		where 
+			psi=e1,Y= -1;
+			psi=e2,Y= -1;
+			psi=e3,Y= -1;
+			psi=u, Y=  2/3;
+			psi=c, Y=  2/3;
+			psi=t, Y=  2/3;
+			psi=d, Y= -1/3;
+			psi=s, Y= -1/3;
+			psi=b, Y= -1/3.
+
+
+%%%%%%% quark-gluon interaction %%%%%%
+
+lterm  GG*anti(psi)*lambda*gamma*G*psi  where  psi=q1; psi=q2; psi=q3.
+
+%%%%%%% Yukawa interactions for quarks %%%%%%%
+
+lterm  -M/MW/Sqrt2*gw*(anti(pl)*(1+g5)/2*pr*pp + anti(pr)*(1-g5)/2*pl*PP )
+    where
+	M=Vud*0,  pl=q1a, pr=d;          % 0 stands for Md 
+	M=Vus*Ms, pl=q1a, pr=s;
+	M=Vub*Mb, pl=q1a, pr=b;
+	M=Vcd*0,  pl=q2a, pr=d;
+	M=Vcs*Ms, pl=q2a, pr=s;
+	M=Vcb*Mb, pl=q2a, pr=b;
+	M=Vtd*0,  pl=q3a, pr=d;
+	M=Vts*Ms, pl=q3a, pr=s;
+	M=Vtb*Mb, pl=q3a, pr=b.
+
+
+lterm  -M/MW/Sqrt2*gw*(anti(pl)*(1+g5)/2*i*tau2*pr*PP + anti(pr)*(1-g5)/2*i*pl*tau2*pp ) 
+    where
+	M=0 ,  pl=q1a, pr=u;
+	M=Mc,  pl=q2a, pr=c;
+	M=Mtop,pl=q3a, pr=t.
+
+%%%%%%% Yukawa interactions for leptons %%%%%%%
+
+lterm  -M/MW/Sqrt2*gw*(anti(pl)*(1+g5)/2*pr*pp + anti(pr)*(1-g5)/2*pl*PP )
+    where
+	M=Mm,  pl=l2,  pr=e2;
+	M=Mtau,  pl=l3,  pr=e3.

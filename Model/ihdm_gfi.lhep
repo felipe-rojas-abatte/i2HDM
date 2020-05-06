@@ -1,0 +1,9 @@
+
+% Self-interaction of gauge bosons %
+
+lterm -F**2/4  where 	F=deriv^mu*B1^nu-deriv^nu*B1^mu.
+
+lterm -F**2/4  where 	F=deriv^mu*G^nu^a-deriv^nu*G^mu^a+i*GG*f_SU3^a^b^c*G^mu^b*G^nu^c.
+
+lterm -F**2/4  where    F=deriv^mu*WW^nu^a-deriv^nu*WW^mu^a -gw*eps^a^b^c*WW^mu^b*WW^nu^c.
+

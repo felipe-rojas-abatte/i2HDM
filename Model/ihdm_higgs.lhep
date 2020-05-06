@@ -1,0 +1,41 @@
+%%%%%% Higgs sector %%%%%%
+
+parameter    	lam=1/8*(EE*MH/(MW*SW))**2: 'lambda_phi parameter'.
+
+lterm -lam*(PP*pp-v**2/2)**2   where  v=2*MW*SW/EE.
+
+% lam=1/8*(EE*MH/(MW*SW))**2 y lterm -2*lam*(PP*pp-v**2/2)**2 CON ESTE CAMBIO DE VARIABLES APARECE UN VERTICE  H H  2M_H^2  prueba
+
+% lam=1/8*(EE*MH/(MW*SW))**2 y lterm -lam*(PP*pp-v**2/2)**2 CON ESTE CAMBIO DE VARIABLES APARECE UN VERTICE  H H  M_H^2   prueba2
+
+ 
+let Dpp^mu^a = (deriv^mu + i*gy/2*B1^mu)*pp^a + i*gw/2*taupm^a^b^c*WW1^mu^c*pp^b.
+
+let DPP^mu^a = (deriv^mu - i*gy/2*B1^mu)*PP^a - i*gw/2*taupm^a^b^c*WW2^mu^c*PP^b.
+
+lterm DPP*Dpp.
+
+
+lterm -i*GG*f_SU3*ccghost(G)*G^mu*deriv^mu*ghost(G).
+lterm  -1/2*(deriv*G)**2.
+
+
+do_if gauge_fixing==Feynman.
+
+lterm -gw*eps*gh*WW*deriv*Gh.
+
+lterm gw*eps*deriv*Gh*gh*WW.
+
+
+lterm  -1/2*(deriv*A)**2.
+
+
+lterm  -1/2*(2*(deriv*'W+'+MW*'W+.f')*(deriv*'W-'+MW*'W-.f') +	(deriv*Z+MW/CW*'Z.f')**2).
+
+
+lterm -MW*EE/2/SW*((H+i*'Z.f')*('W-.C'*'W+.c' + 'W+.C'*'W-.c') + H*'Z.C'*'Z.c'/CW**2-2*i*'Z.f'*'W+.C'*'W-.c').
+
+lterm i*EE*MW/2/CW/SW*('W+.f'*('W-.C'*'Z.c'*(1-2*SW**2)+'W-.c'*'Z.C'+2*CW*SW*'W-.C'*'A.c') - 'W-.f'*('W+.C'*'Z.c'*(1-2*SW**2)+'W+.c'*'Z.C'+2*CW*SW*'W+.C'*'A.c')).
+
+end_if.
+

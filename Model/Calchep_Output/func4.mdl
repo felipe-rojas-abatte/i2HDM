@@ -1,0 +1,46 @@
+SM+HAA+HGG(tFG))
+ Constraints 
+ Name  |> Expression                                                                                                                                                                                           <|
+pi     |acos(-1)
+GG     |sqrt(4*pi*alphaQCD(Q))
+Mcp    |McMc*(1+4/3*alphaQCD(McMc)/pi) % 1 loop formula like in Hdecay
+Mbp    |MbMb*(1+4/3*alphaQCD(MbMb)/pi) % 1 loop formula like in Hdecay
+alphaE0|1/137.036 % electromagnetic constant at zero energy
+CW     |MW/MZ % on-shell cos of the Weinberg angle
+SW     |sqrt(1-CW^2) % sin of the Weinberg angle
+GF     |EE^2/(2*SW*MW)^2/Sqrt2 % Fermi Constant
+vv     |2*MW/EE*SW
+c12    |sqrt(1-s12^2) % parameter  of C-K-M matrix
+c23    |sqrt(1-s23^2) % parameter  of C-K-M matrix
+c13    |sqrt(1-s13^2) % parameter  of C-K-M matrix
+LamQCD |initQCD5(alphaSMZ, McMc, MbMb, Mtop)
+Mb     |MbEff(Q)
+Mt     |MtEff(Q)
+Mc     |McEff(Q)
+md2    |1/2*ld345*vv^2-Mh1^2 % squered mass parameter of the dark matter lagrangian sector
+ld3    |2/vv^2*(Mhc^2+1/2*ld345*vv^2-Mh1^2) % ld3 quartic coupling constant between odd particle and higgs
+ld4    |1/vv^2*(Mh2^2+Mh1^2-2*Mhc^2) % ld4 quartic coupling constant between odd particle and higgs
+ld5    |1/vv^2*(Mh1^2-Mh2^2) % ld5 quartic coupling constant between odd particle and higgs
+lam    |1/8*(EE*MH/(MW*SW))^2 % lambda_phi parameter
+aQCD   |alphaQCD(MH)/pi
+Qu     |2/3
+Qd     |-1/3
+tau2c  |(MH/2/McRun(MH/2))^2
+tau2b  |(MH/2/MbRun(MH/2))^2
+tau2t  |(MH/2/MtRun(MH/2))^2
+tau2l  |(MH/2/Mtau)^2
+tau2W  |(MH/2/MW)^2
+Rqcd   |1+149/12*aQCD+68.6482*aQCD^2-212.447*aQCD^3
+Cq     |1+11/4*aQCD
+lnTop  |2*log(Mtop/MH)
+Ctop   |1+11/4*aQCD+(6.1537-2.8542*lnTop)*aQCD^2+(10.999-17.93*lnTop+5.47*lnTop^2)*aQCD^3
+LmbdAA |-alphaE0/(8*pi)*EE/(2*MW*SW)*cabs(3*Qu^2*(HggF(tau2c)*(1+aQCD*Hgam1F(tau2c))+HggF(tau2t)*(1+aQCD*Hgam1F(tau2t)))+3*Qd^2*HggF(tau2b)*(1+aQCD*Hgam1F(tau2b))+HggF(tau2l)+HggV(tau2W))
+LmbdGG |-aQCD/16*sqrt(Rqcd)*EE/(2*SW*MW)*cabs(HggF((MH/2/Mcp)^2)*Cq+HggF((MH/2/Mbp)^2)*Cq+HggF((MH/2/Mtop)^2)*Ctop)
+B00000 |1+2*CW^2
+B00001 |1-4*CW^2
+B00002 |EE^2*vv-8*LmbdGG*MW^2*SW^2
+B00003 |ld3+ld4+ld5
+B00004 |ld3+ld4-ld5
+B00005 |ld4+ld5
+B00006 |ld4-ld5
+B00007 |ld3+ld4
