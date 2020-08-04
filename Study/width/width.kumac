@@ -1,0 +1,6 @@
+*** Begin of history file: Tue Dec 26 22:01:44 2017
+sigma fpi=0.130
+sigma DM=0.2
+sigma v=242.17
+sigma mpi=0.13957
+sigma print fpi**2/(4*v**4)*DM**2*sqrt(DM**2-mpi**2)/pi

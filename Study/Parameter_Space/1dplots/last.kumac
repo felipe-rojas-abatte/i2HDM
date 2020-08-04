@@ -1,0 +1,17 @@
+*** Begin of history file: Wed Dec 23 16:34:41 2015
+sigma x1=200
+sigma x2=600
+sigma a=10/400
+sigma b=40-10/400
+sigma print a*300+b
+sigma print a*200+b
+sigma print a
+sigma print b
+sigma print a*600+b
+sigma a=10./400.
+sigma b=40.-a*600.
+sigma print a*600+b
+sigma print a*200+b
+sigma print a*750+b
+q
+*** End   of history file: Wed Dec 23 16:53:26 2015

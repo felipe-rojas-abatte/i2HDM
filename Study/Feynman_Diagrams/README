@@ -1,0 +1,4 @@
+gsp fd_1
+rm fd_1.eps
+ps2eps fd_1.ps
+epstopdf fd_1.eps

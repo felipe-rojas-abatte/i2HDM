@@ -1,0 +1,31 @@
+Background (pp > j Z, Z > v v (3 v generations)) with basic cuts at parton level
+(pp > j W wasn't considered as the contribution is smaller due
+to lepton veto and we only need the ratio which will be similar)
+SR1  8_TeV  150  9.788 pb
+SR2  8_TeV  200  3.254 pb
+SR3  8_TeV  250  1.27 pb
+SR4  8_TeV  300  0.5524 pb
+SR5  8_TeV  350  0.2612 pb
+SR6  8_TeV  400  0.1321 pb
+SR7  8_TeV  500  0.0389 pb
+SR8  8_TeV  600  0.01302 pb
+SR9  8_TeV  700  0.004802 pb
+
+SR1  13_TeV  150  23.31 pb
+SR2  13_TeV  200  8.541 pb
+SR3  13_TeV  250  3.673 pb
+SR4  13_TeV  300  1.746 pb
+SR5  13_TeV  350  0.9043 pb
+SR6  13_TeV  400  0.4996 pb
+SR7  13_TeV  500  0.1747 pb
+SR8  13_TeV  600  0.06931 pb
+SR9  13_TeV  700  0.03058 pb
+
+
+
+
+
+
+
+
+

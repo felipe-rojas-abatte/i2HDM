@@ -1,0 +1,6 @@
+A) In folder 200GeV are the python code and data for the range Mh1 = (10 ; 200) GeV,  to generate:
+- Plot of Relic Density vs Mh1 for negatives and positives values of ld345 with the PLANCK limit
+- Plot of rescaled Direct Detection Cross Section vs Mh1 for negatives and positives values of ld345 with the LUX limits
+- Plot of Direct Detection Cross Section vs Mh1 for different ld345 with LUX limits
+
+B) In folder 1TeV are the python code and data for the range Mh1 = (10 ; 1000) GeV, to generate the same plots. 

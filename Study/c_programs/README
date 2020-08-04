@@ -1,0 +1,7 @@
+c files:
+
+- cuts.c = cuts on the main scan file (scan_rand_LUX.dat). Planck limit, LUX limits, HiggsSignals, HiggsBounds, LEP, Electroweak Presicion Test
+
+- scan_grid = file with the grid scan on the parameter scape
+
+- scan_rand = file with a random scan on the parameter space

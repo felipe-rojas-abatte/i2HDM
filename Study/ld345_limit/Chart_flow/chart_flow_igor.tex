@@ -1,0 +1,82 @@
+\documentclass{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\begin{document}
+\pagestyle{empty}
+
+
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5.5em, text centered, rounded corners, minimum height=2em]
+\tikzstyle{blocklong} = [rectangle, draw, fill=blue!20, 
+    text width=10em, text centered, rounded corners, minimum height=2em]
+\tikzstyle{blockempty} = [rectangle, draw, fill=white!0, 
+    text width=8em, text centered, rounded corners, minimum height=2em]
+\tikzstyle{blockemptylong} = [rectangle, draw, fill=white!0, 
+    text width=11em, text centered, rounded corners, minimum height=2em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+\tikzstyle{blockred} = [rectangle, draw, fill=red!20, 
+    text width=8em, text centered, rounded corners, minimum height=2em]
+    
+%\begin{tikzpicture}[node distance = 2cm, auto]
+    % Place nodes
+%    \node [block] (init) {initialize model};
+%    \node [cloud, left of=init] (expert) {expert};
+%    \node [cloud, right of=init] (system) {system};
+%    \node [block, below of=init] (identify) {identify candidate models};
+%    \node [block, below of=identify] (evaluate) {evaluate candidate models};
+%    \node [block, left of=evaluate, node distance=3cm] (update) {update model};
+%    \node [decision, below of=evaluate] (decide) {is best candidate better?};
+%    \node [block, below of=decide, node distance=3cm] (stop) {stop};
+    % Draw edges
+%    \path [line] (init) -- (identify);
+ %   \path [line] (identify) -- (evaluate);
+  %  \path [line] (evaluate) -- (decide);
+   % \path [line] (decide) -| node [near start] {yes} (update);
+   % \path [line] (update) |- (identify);
+   % \path [line] (decide) -- node {no}(stop);
+   % \path [line,dashed] (expert) -- (init);
+   % \path [line,dashed] (system) -- (init);
+   % \path [line,dashed] (system) |- (evaluate);
+%\end{tikzpicture}
+\begin{figure}[h]
+\begin{tikzpicture}[node distance = 2cm, auto]
+\begin{scope}[shift={(0,0)}]
+% Place nodes
+	\node [cloud] (step1) {MicrOMEGAs};
+	\node [blockempty, above of=step1, node distance=1.8cm] (input) {\small theory input};
+	\node [blockempty, right of=step1, node distance=5cm] (scan) {\small scan over: M$_{h_1}$, M$_{h_2}$, M$_{H^{\pm}}$, $\lambda_{345}$, $\lambda_2$};
+	\node [blockempty, above of=scan, node distance=1.8cm] (constraints) {\small constraints: theory, exp., DM};
+	\node [blocklong, right of=scan, node distance=5cm] (general) {\small general plot: \\ DM $<$ PLANCK$+2 \sigma$};
+	\node [blocklong, below of=general, node distance=1.3cm] (fitted) {\small fitting DM:\\ DM $=$ PLANCK$\pm 2 \sigma$};
+	\node [cloud, below of=step1, node distance=3cm] (step2) {CalcHEP};
+	\node [blockemptylong, right of=step2, node distance=5cm] (DM-sig) {DM signatures @ LHC};
+	\node [block, right of=DM-sig, node distance=5cm] (BM) {Benchmarks};
+	\node [blockempty, below of=DM-sig, node distance=1.3cm] (mono-jet) {mono-jets};
+	\node [cloud, below of=mono-jet, node distance=1.3cm] (CM) {CheckMATE};
+	\node [blockred, left of=CM, node distance=5cm] (step3) {HepMC \\ Pythia \\ Delphes};	
+	\node [block, right of=CM, node distance=5cm] (plot3) {\small Limits from LHC};
+    % Draw edges
+	\path [line, dashed] (input) -- (step1);
+	\path [line, dashed] (step1) -- (scan);
+	\path [line, dashed] (constraints) -- (scan);
+	\path [line, dashed] (scan) -- (general);
+	\path [line, dashed] (scan) -- (fitted);
+	\path [line, dashed] (step1) -- (step2);
+	\path [line, dashed] (step2) -- (DM-sig);
+	\path [line, dashed] (DM-sig) -- (BM);
+	\path [line, dashed] (DM-sig) -- (mono-jet);
+	\path [line, dashed] (mono-jet) -- (CM);
+	\path [line, dashed] (step3) -- (CM);
+	\path [line, dashed] (CM) -- (plot3);	
+\end{scope}
+\end{tikzpicture}
+\end{figure}
+
+\end{document}
