@@ -1,0 +1,84 @@
+\subsection{Constraints from LHC Higgs data}
+
+The LHC Higgs data further restricts the i2HDM parameters space in the form of constraints on the couplings of the SM-like Higgs boson. A collection of combined fits from the Run I data, for both ATLAS and CMS, can be found in~\cite{Khachatryan:2016vau}.
+In the i2HDM, the leading effect is encoded in two observables: the decays of the Higgs into two Dark Matter scalars, $H \to h_1 h_1$, which is kinematically open when $m_{h_1} < M_H/2$; and the contribution of the charged Higgs loops to the $H \to \gamma \gamma$ decay. 
+In principle, we would need to do a two-parameter fit of the available Higgs data.  None of the fits presented in~\cite{Khachatryan:2016vau} can therefore be directly applied in our case.
+
+A simpler possibility is, instead, to consider the best possible bound from the available fits on the two parameters.
+We follow this simpler procedure, confident that it will lead to a somewhat more conservative estimation of the bounds.
+For the invisible Higgs branching ratio, we consider the bound coming from the dedicated ATLAS search~\cite{Aad:2015txa}
+\begin{equation}
+Br(H\to invisible)  < 28\% 
+\label{eq:lhc-higgs-invis}
+\end{equation}
+at the 95$\%$ CL, which is comparable with a 36\% limit
+from the combined CMS analysis~\cite{CMS:2015naa}.\footnote{One could also limit $Br(H\to invisible)$ 
+using $Br(H\to BSM)<34\% $ at 95$\%$CL exclusion from Run1  ATLAS-CMS Higgs data analysis~\cite{Khachatryan:2016vau}.
+However, here we use the $Br(H\to invisible) < 28\% $ limit from a dedicated ATLAS search
+as it is less model dependent.}
+
+For the second observable, the di-photon decay rate, we consider the result from the combined fit on the signal strength in the di-photon channel~\cite{Khachatryan:2016vau}:
+\begin{equation}
+\frac{Br^{BSM}(H\to \gamma\gamma)}{Br^{SM}(H\to \gamma\gamma)} =\mu^{\gamma\gamma} = 1.14^{+0.38}_{-0.36}\,,
+\label{eq:lhc-higgs-aa}
+\end{equation}
+%\comment{(MT:I have updated the reference and values above to the published version of the conference note previously used. The values change only very slightly. Note that I have doubled the errors as an estimate of the 95\% CL as Sasha did with the old results. The old values were $\mu^{\gamma\gamma} = 1.16^{+0.40}_{-0.36}$.)}\\
+where we doubled the $1\sigma$ errors given in \cite{Khachatryan:2016vau} to obtain the $\mu^{\gamma\gamma}$ range at the 95\% CL.
+A sufficiently light charged Higgs with sufficiently large $\lambda_3$ coupling to the SM Higgs boson,
+which would bring the $H\to \gamma\gamma$ decay beyond the quoted limit, is excluded.
+
+It should be noted that we would expect a proper 2-parameter 
+fit to lead to stronger constraints that the ones we use, however the qualitative impact of the constraints should be unchanged.
+For example, the partial decay width of the Higgs into  DM which is defined by
+\begin{equation}
+ \Gamma (H \to h_1 h_1) = \frac{1}{8\pi}\frac{\lambda_{345}^2 M_W^2}{g_W^2 M_H}\sqrt{1-4\frac{M_{h_1}^2}{M_H^2}},
+\end{equation}
+where $g_W$ is the weak coupling constant,  provides the following  bound on $\lambda_{345}$:
+\begin{equation}
+|\lambda_{345}| < 
+\left(
+\frac{8\pi g_W^2 \Gamma_{SM} M_H}{M_W^2 \left(\frac{1}{Br^{max}_{invis}}-1\right)\sqrt{1-4\frac{M_{h_1}^2}{M_H^2}}}	
+\right)^{1/2},\label{lam345-limit-from-inv}
+\end{equation}
+where $Br^{max}_{invis}=0.28$ is the current bound on the maximal value of branching ratio
+of the Higgs boson decay into invisible mode.
+The above limit on $\lambda_{345}$ is $M_{h_1}$ dependent:
+for  $M_{h_1}/M_{H} \ll 1$  it is about 0.019, while for  $M_{h_1}$ closer to the threshold,
+e.g. 60 GeV, the limit on  $\lambda_{345}$ increases almost by a factor of two and reaches a value of 0.036.
+In addition we have included the limit from $H\to h_2 h_2$
+when $h_2$ is close in mass to $h_1$, which can be trivally done, taking into account that
+$H h_2 h_2$ coupling is equal to $\tilde \lambda_{345}$ in Eq.~(\ref{tildelam345}).
+%\begin{equation}
+%\lambda_{Hh_2h_2}= \lambda_{345}+ \frac{2(M_{h_2}^2-M_{h_1}^2)}{v^2}.
+%\label{eq:Hh2h2}
+%\end{equation}
+We discuss these limits in more details below, together with the Dark Matter (DM) constraints.
+
+%set an important constraint coming from  $H \rightarrow h_1h_1$
+%invisible Higgs boson decay which is restricted to be 
+%\begin{equation}
+%Br(H\to invisible) < 28\% 
+%\label{eq:lhc-higgs-invis}
+%\end{equation}
+%at 95$\%$ CL as comes from ATLAS~\cite{Aad:2015txa} analysis which is comparable with 36\% limit
+%from  combined CMS analysis~\cite{CMS:2015naa}\footnote{One could also limit $Br(H\to invisible)$ 
+%using $Br(H\to BSM)<32\% $ at 95$\%$CL exclusion from Run1  ATLAS-CMS Higgs data analysis~\cite{ATLAS-CMS-2015-HIGGS-COMB}.
+%However, here we use $Br(H\to invisible) < 28\% $ limit from the dedicated ATLAS  search
+%as it is less model dependent.}.
+%At the same time, the restriction  on the charged Higgs mass, $M_{h^+}$, from LHC comes from  
+%\begin{equation}
+%\frac{Br^{BSM}(H\to \gamma\gamma)}{Br^{SM}(H\to \gamma\gamma)} =\mu^{\gamma\gamma} = 1.16^{+40}_{-36}
+%\label{eq:lhc-higgs-aa}
+%\end{equation}
+%limit from combined Run1 results from   ATLAS-CMS Higgs data analysis~\cite{ATLAS-CMS-2015-HIGGS-COMB}.
+%A sufficiently light charged Higgs with sufficiently large $\lambda_3$ coupling to the SM Higgs boson
+%which  deviate  radiative $H\to \gamma\gamma$ decay beyond the quoted limit, is excluded.
+%
+%This limit requires small values of $\lambda_{345}$ for the case when this decay is open i.e. for the case 
+%of $M_{h_1}<M_{H}/2$. We discuss this limit in more details below, together with the 
+%Dark Matter (DM) constraints.
+% 
+%\giac{[COMMENT: }{I think that, in principle, we should do a 2-parameter fit of the Higgs data, with only the $H\gamma\gamma$ and the $H$ to invisible couplings turned on. So, none of the fits in~\cite{ATLAS-CMS-2015-HIGGS-COMB} applies directly. I can add a few lines to comment on this. Note that a fit with less floating parameters will lead to a stronger bound. In practice, whet you did here should be fine -- unless we want to redo the fit ourselves.]} 
+
+%%%%%%%%%%%%%%%%%%%%%%
+

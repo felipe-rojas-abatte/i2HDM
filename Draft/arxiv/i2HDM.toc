@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}i2HDM: parameter space, model implementation, theoretical and experimental constraints}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Constraints from the Higgs potential}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Model implementation}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Constraints from perturbativity and unitarity}{9}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Constraints from LEP and electroweak precision data}{11}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Constraints from LHC Higgs data}{13}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Dark Matter relic density and direct/indirect detection}{14}{subsection.2.6}
+\contentsline {section}{\numberline {3}Numerical scan of the parameter space}{17}{section.3}
+\contentsline {subsection}{\numberline {3.1}Results for the generic scan}{17}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Fitting the relic density}{22}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}The high mass region and the LHC sensitivity}{23}{subsection.3.3}
+\contentsline {section}{\numberline {4}Probing Dark Matter signals from i2HDM at the LHC}{25}{section.4}
+\contentsline {subsection}{\numberline {4.1}Dark Matter signatures and rates}{25}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Limits from LHC@8TeV and projections for LHC@13TeV}{32}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Constraints on the parameter space due the extended limits}{35}{subsection.4.3}
+\contentsline {section}{\numberline {5}Concluding remarks}{40}{section.5}

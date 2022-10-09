@@ -1,0 +1,46 @@
+
+----------------------------------------------------------------
+Incorrect kinetic term for particle A/A :
+(-1+8/EE**2*LAAH*MW**2*SW**2/vv)*p1**2+(-8/EE**2*LAAH*MW**2*SW**2/vv)*p1^mu*p1^nu
+----------------------------------------------------------------
+Incorrect kinetic term for particle G/G :
+(-1+8/EE**2*LGGH*MW**2*Rqcd_h*SW**2/vv)*p1**2+(-8/EE**2*LGGH*MW**2*Rqcd_h*SW**2/vv)*p1^mu*p1^nu
+---------------------------------------------------------------
+Mass term for particle H :
+(+8/EE**2*MW**2*SW**2*lam) = +125.000000**2
+This particles was declared with mass MH = 125.000000
+
+---------------------------------------------------------------
+Mass term for particle Z :
+(+1/CW**2*MW**2) = +91.188000**2
+This particles was declared with mass MZ = 91.188000
+
+---------------------------------------------------------------
+Mass term for particle 'Z.f' :
+(+1/CW**2*MW**2) = +91.188000**2
+This particles was declared with mass MZ = 91.188000
+
+---------------------------------------------------------------
+Mass term for particle b :
+(+1*Mb) = +3.240734
+This particles was declared with mass Mbp = 4.646757
+
+---------------------------------------------------------------
+Mass term for particle c :
+(+1*Mc) = +0.660647
+This particles was declared with mass Mcp = 1.428479
+
+---------------------------------------------------------------
+Mass term for particle '~h+' :
+(-1*md2+2/EE**2*MW**2*SW**2*ld3) = +130.000000**2
+This particles was declared with mass Mhc = 130.000000
+
+---------------------------------------------------------------
+Mass term for particle '~h1' :
+(-1*md2+2/EE**2*MW**2*SW**2*ld3+2/EE**2*MW**2*SW**2*ld4+2/EE**2*MW**2*SW**2*ld5) = +100.000000**2
+This particles was declared with mass Mh1 = 100.000000
+
+---------------------------------------------------------------
+Mass term for particle '~h2' :
+(-1*md2+2/EE**2*MW**2*SW**2*ld3+2/EE**2*MW**2*SW**2*ld4-2/EE**2*MW**2*SW**2*ld5) = +120.000000**2
+This particles was declared with mass Mh2 = 120.000000

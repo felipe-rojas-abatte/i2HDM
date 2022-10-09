@@ -1,0 +1,75 @@
+\documentclass{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\begin{document}
+\pagestyle{empty}
+
+
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5em, text centered, rounded corners, minimum height=2em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+    
+%\begin{tikzpicture}[node distance = 2cm, auto]
+    % Place nodes
+%    \node [block] (init) {initialize model};
+%    \node [cloud, left of=init] (expert) {expert};
+%    \node [cloud, right of=init] (system) {system};
+%    \node [block, below of=init] (identify) {identify candidate models};
+%    \node [block, below of=identify] (evaluate) {evaluate candidate models};
+%    \node [block, left of=evaluate, node distance=3cm] (update) {update model};
+%    \node [decision, below of=evaluate] (decide) {is best candidate better?};
+%    \node [block, below of=decide, node distance=3cm] (stop) {stop};
+    % Draw edges
+%    \path [line] (init) -- (identify);
+ %   \path [line] (identify) -- (evaluate);
+  %  \path [line] (evaluate) -- (decide);
+   % \path [line] (decide) -| node [near start] {yes} (update);
+   % \path [line] (update) |- (identify);
+   % \path [line] (decide) -- node {no}(stop);
+   % \path [line,dashed] (expert) -- (init);
+   % \path [line,dashed] (system) -- (init);
+   % \path [line,dashed] (system) |- (evaluate);
+%\end{tikzpicture}
+\begin{figure}[h]
+\begin{tikzpicture}[node distance = 2cm, auto]
+\begin{scope}[shift={(0,0)}]
+% Place nodes
+	\node [cloud] (step1) {MicrOMEGAs};
+	\node [block, right of=step1, node distance=4cm] (scan) {\small scan over: M$_{h_1}$, M$_{h_2}$, M$_{H^{\pm}}$, $\lambda_{345}$, $\lambda_2$};
+	\node [block, right of=scan, node distance=3cm] (rest) {\small Restrictions};
+	\node [block, below of=rest, node distance=1.5cm] (plot1) {Plot1};    
+	\node [block, right of=rest, node distance=3cm] (sat) {\small Saturation};
+	\node [block, below of=sat, node distance=1.5cm] (plot2) {\small Plot2};
+	\node [cloud, below of=step1, node distance=3cm] (step2) {CalcHEP};
+	\node [block, right of=step2, node distance=4cm] (DM-sig) {Dark Matter signatures};
+	\node [block, right of=DM-sig, node distance=3cm] (BM) {Benchmarks};
+	\node [block, below of=step2, node distance=1.8cm] (mono-jet) {\small$pp\rightarrow h_1h_1j$ \small$pp\rightarrow h_1h_2j$};
+	\node [block, right of=mono-jet, node distance=3cm] (step3) {HepMC \\ Pythia \\ Delphes};	
+	\node [cloud, right of=step3, node distance=3.5cm] (CM) {CheckMATE};
+	\node [block, right of=CM, node distance=4cm] (plot3) {\small Limits from LHC};
+    % Draw edges
+	\path [line, dashed] (step1) -- (scan);
+	\path [line, dashed] (scan) -- (rest);
+	\path [line, dashed] (rest) -- (sat);
+	\path [line, dashed] (rest) -- (plot1);
+	\path [line, dashed] (sat) -- (plot2);
+	\path [line, dashed] (step1) -- (step2);
+	\path [line, dashed] (step2) -- (DM-sig);
+	\path [line, dashed] (DM-sig) -- (BM);
+	\path [line, dashed] (step2) -- (mono-jet);
+	\path [line, dashed] (mono-jet) -- (step3);
+	\path [line, dashed] (step3) -- (CM);
+	\path [line, dashed] (DM-sig) -- (BM);
+	\path [line, dashed] (CM) -- (plot3);	
+\end{scope}
+\end{tikzpicture}
+\end{figure}
+
+\end{document}

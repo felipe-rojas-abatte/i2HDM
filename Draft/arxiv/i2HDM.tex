@@ -1,0 +1,119 @@
+\documentclass[12pt,a4paper]{article}
+\pdfoutput=1
+\hoffset=-2cm 
+\textwidth=17.5cm
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}  
+\usepackage{braket}
+%\usepackage{subcaption}
+
+\usepackage[affil-it]{authblk}
+
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+
+
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand {\blue} {\color{blue}}
+\newcommand {\cyan} {\color{cyan}}
+\newcommand {\red} {\color{red}}
+\newcommand {\magenta} {\color{Plum}}
+\definecolor{NewYellow}{cmyk}{0.2,0.2,1,0.2}
+\newcommand {\yellow} {\color{NewYellow}}
+\definecolor{NewGreen}{rgb}{0,0.4,0}
+\newcommand {\green} {\color{NewGreen}}
+\newcommand{\rem}[1]{{\blue  #1}}
+\newcommand{\comment}[1]{{\blue  #1}}
+\newcommand{\erase}[1]{{\red     #1}}
+\newcommand{\MET}{\textbf{\textit{E}$_{\rm T}^{\rm miss}$}}
+%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{subfigure}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\giac}[2]{{\blue #1 #2}}
+\newcommand{\del}[1]{{\cyan #1}}
+
+\begin{document}
+
+
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+
+\title{Anatomy of the Inert Two Higgs Doublet Model in the light of the LHC and non-LHC Dark Matter Searches}
+
+\author[1,2]{Alexander Belyaev}
+\author[3]{Giacomo Cacciapaglia}
+\author[4]{Igor P. Ivanov}
+\author[2,5]{Felipe Rojas}
+\author[1,2]{Marc Thomas}
+
+\affil[1]{Rutherford Appleton Laboratory, Didcot, United Kingdom}
+\affil[2]{University of Southampton, Southampton, United Kingdom}
+\affil[5]{Universidad T\'ecnica Federico Santa Mar\'ia, Valpara\'iso, Chile}
+\affil[3]{Univ Lyon, Universit\'e Lyon 1, CNRS/IN2P3, IPNL, F-69622, Villeurbanne, France }
+\affil[4]{CFTP, Instituto Superior T\'ecnico, Universidade de Lisboa, Lisbon, Portugal}
+
+%\date{\today}
+\maketitle
+\vspace{0.8cm}
+\begin{abstract}
+The inert Two Higgs Doublet Model (i2HDM) is a theoretically well-motivated  example  of a
+minimal consistent Dark Matter (DM)  model  which provides mono-jet, mono-$Z$, mono-Higgs and
+Vector-Boson-Fusion+$\MET{}$ signatures at the LHC, complemented by signals in direct and
+indirect DM search experiments. In this paper we have performed a detailed analysis of the  
+constraints in the full 5D  parameter space of the i2HDM, coming from perturbativity, unitarity, electroweak
+precision data, Higgs data from the LHC, DM relic density, direct/indirect DM detection and LHC
+mono-jet analysis, as well as  implications of experimental LHC studies on disappearing charged
+tracks relevant to high DM mass region. We demonstrate the complementarity of the above
+constraints and present projections for future LHC data and direct DM detection
+experiments to probe further i2HDM parameter space. The model is implemented into the CalcHEP and
+micrOMEGAs packages, which are publicly available at the HEPMDB database, and is ready for a further
+exploration in the context of the LHC, relic density and DM direct detection.
+
+
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+
+\input{1-Intro}
+\input{2-Parameter-Space}
+\input{3-numerical-scan}
+\input{4-Collider-Pheno}
+\input{5-Conclusions}
+
+\section*{Acknowledgements}
+
+AB thanks Tania Robens and Alexander Pukhov for useful discussions.
+AB and MT acknowledge partial support from the STFC grant number  ST/L000296/1
+and the NExT Institute, FAPESP grant 2011/11973-4 for funding their visit to ICTP-SAIFR as well as SOTON-FAPESP collaboration grant.
+AB thanks the Royal Society Leverhulme Trust Senior Research Fellowship LT140094.
+MT acknowledges support from an STFC STEP award. 
+GC acknowledges partial support from the Labex-LIO (Lyon Institute of Origins) under grant ANR-10-LABX-66 and FRAMA (FR3127, F\'ed\'eration de Recherche ``Andr\'e Marie Amp\`ere").
+IPI acknowledges funding from \textit{Fun\-da\-\c{c}\~{a}o para a Ci\^{e}ncia e a Tecnologia} (FCT)
+through the Investigator contract IF/00989/2014/CP1214/CT0004
+under the IF2014 Program and through FCT contracts UID/FIS/00777/2013 and CERN/FIS-NUC/0010/2015,
+which are partially funded through POCTI, COMPETE, QREN, and the European Union. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliography{bib}
+%\bibliographystyle{unsrt}
+%\bibliographystyle{jhep}
+\bibliographystyle{JHEP-2}
+
+\end{document}
+
+

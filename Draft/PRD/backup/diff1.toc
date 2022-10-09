@@ -1,0 +1,36 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
+\contentsline {section}{\numberline {2}i2HDM: parameter space, model implementation, theoretical and experimental constraints}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}Constraints from the Higgs potential}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Model implementation}{9}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Constraints from perturbativity and unitarity}{10}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Constraints from LEP and electroweak precision data}{12}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Constraints from LHC Higgs data}{14}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Dark Matter relic density and direct/indirect detection}{15}{subsection.2.6}
+\contentsline {section}{\numberline {3}Numerical scan of the parameter space}{18}{section.3}
+\contentsline {subsection}{\numberline {3.1}Results {\color {red}\sout {for }}{\color {blue}\uwave {of }}the {\color {red}\sout {generic }}{\color {blue}\uwave {general }}scan}{18}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Fitting the relic density}{22}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}{\color {blue}\uwave {The low mass region}}}{24}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.3}{\color {red}\sout {The high mass region and the LHC sensitivity}}}{24}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.2.1}{\color {blue}\uwave {The high mass region and the LHC sensitivity}}}{24}{subsubsection.3.2.1}
+\contentsline {section}{\numberline {4}Probing Dark Matter signals from i2HDM at the LHC}{25}{section.4}
+\contentsline {subsection}{\numberline {4.1}{\color {red}\sout {Dark Matter signatures and rates}}}{25}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}{\color {blue}\uwave {Dark Matter signatures: diagrams and features}}}{26}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}{\color {blue}\uwave {Mono-jet production}}}{26}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}{\color {blue}\uwave {Mono-$Z$ production}}}{27}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}{\color {blue}\uwave {Mono-Higgs production}}}{27}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}{\color {blue}\uwave {Vector boson fusion}}}{28}{subsubsection.4.1.4}
+\contentsline {subsection}{\numberline {4.2}{\color {blue}\uwave {Mono-object production: rates and comparison}}}{29}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}{\color {blue}\uwave {Implementation and cuts}}}{29}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}{\color {blue}\uwave {Production rates}}}{30}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}{\color {blue}\uwave {Benchmark points}}}{31}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Limits from LHC@8TeV and projections for LHC@13TeV}{33}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}{\color {blue}\uwave {Implementation and the LHC data used}}}{34}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}{\color {blue}\uwave {Limits from $pp\rightarrow h_1h_1 j$}}}{34}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}{\color {blue}\uwave {Limits from $pp\rightarrow h_1h_2 j$}}}{36}{subsubsection.4.4.3}
+\contentsline {subsection}{\numberline {4.5}{\color {red}\sout {Constraints on the parameter space due the extended limits}}}{37}{subsection.4.5}
+\contentsline {section}{\numberline {5}{\color {blue}\uwave {Constraining i2HDM: future projections}}}{37}{section.5}
+\contentsline {subsection}{\numberline {5.1}{\color {blue}\uwave {Highlighting the ``always allowed'' regions}}}{37}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}{\color {blue}\uwave {Highlighting the ``always excluded'' regions}}}{39}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}{\color {blue}\uwave {Fitting the PLANCK data: future projections}}}{41}{subsection.5.3}
+\contentsline {section}{\numberline {6}Concluding remarks}{42}{section.6}
+\contentsline {section}{\numberline {A}{\color {blue}\uwave {Numerical scan: detailed discussion}}}{44}{appendix.A}

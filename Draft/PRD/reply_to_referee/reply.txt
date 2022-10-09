@@ -1,0 +1,140 @@
+Re: DC12096
+    Anatomy of the inert two-Higgs-doublet model in the light of the LHC
+    and non-LHC dark matter searches
+    by Alexander Belyaev, Giacomo Cacciapaglia, Igor P. Ivanov, et al.
+
+Dear Prof. Belyaev,
+
+The above manuscript has been reviewed by one of our referees.
+Comments from the report appear below for your consideration.
+
+When you resubmit your manuscript, please include a summary of the
+changes made and a brief response to all recommendations and
+criticisms.
+
+Yours sincerely,
+
+Alin Tirziu
+Associate Editor
+Physical Review D
+Email: prd@aps.org
+http://journals.aps.org/prd/
+
+----------------------------------------------------------------------
+Report of the Referee -- DC12096/Belyaev
+----------------------------------------------------------------------
+
+It is a pleasure to read this interesting paper. This work has done
+mostly updated work for Inert Higgs Doublet Model (i2HDM). Indeed, I
+agree with author that the parameter space of i2HDM is more or less
+pined down by using the constraints from perturbativity, unitarity, DM
+relic density, direct detection, EW precision test, LEP result, and
+LHC Higgs data. Because of fewer free parameters and their correlated
+relationship, seen from this paper, the model is ready to be tested in
+LHC as benchmark scenario and it is right time that experimentalists
+should also pay attention on this model.
+
+
+
+Generally speaking, I would like recommend this paper to be published
+in PRD but there are still some issues which I hope the authors can
+improve before publishing.
+
+Main suggestions:
+
+=================================================================================
+
+1) In Ref. [29], they claim that the perturbativity and unitarity is
+more reliable by using the code 2HDMC than Ref. [51] and [60],
+especially for HHHH vertex. However, since the author does not use
+2HDMC instead of the conditions presented in Ref. [51] and [60], I
+suggest the authors shall also check whether is there some parameter
+space not properly tested.
+
+--->
+Reply:
+
+We have explicitly checked that the limit
+from perturbative unitarity and perturbativity given by Eq.(13)-(16) we are using in our study is
+consistent with that implemented in the 2HDMC code[68].
+We have added the respective reference and sentense to an updated version of the paper.
+Moreover, we would like to note that in our paper we present the limit on $\lambda_2$ (or $\lambda_{HHHH}$  -- notation from [29])
+as a function of $\lambda_{345}$ pictorially presented in Figure 2 which goes beyond findings in [29].
+
+
+=================================================================================
+
+2) The authors mentioned:
+
+"A related question is whether the model can be better probed by
+indirect detection (ID) experiments, i.e. the detection of energetic
+cosmic rays like positron, gamma ray, and antiproton, which may be
+created by the annihilation of h1 pairs. ..., but the bounds are not
+competitive with those coming from DD."
+
+Recently, the new AMS02 antiproton data seems to have some interesting
+behavior, see Ref. [1610.03071] and [1610.03840]. This could put some
+significant impact on i2HDM parameter space. I suggest the authors can
+add some discussion and estimation about this.
+
+---> Reply
+
+We have checked that the strongest bounds on the i2HDM
+parameter space coming from such experiments are set by gamma ray telescopes: both the Fermi-
+LAT gamma-ray space telescope [84] as well as ground based telescopes. Fermi-LAT is sensitive
+to gamma rays particularly in the low mass range up to O(100 GeV), but the bounds are not
+competitive with those coming from DD. This conclusion is also confirmed by studies in Ref. [60].
+The paper was updated respectively with this sentence.
+
+
+
+1705.01458 indirect detection
+=================================================================================
+
+3) The new allowed region (almost mh1~mh2 and la345~0) discovered by
+the authors shall be identified and more emphasized.
+
+I was interesting in this region and trying to see how this region can
+be survived but in the end I only found the BM1 at the Table 1. Since
+this is the new region claimed by the authors, some more information
+shall be given.
+
+I suspect the relic density of most this region are always too low
+from PLANCK data. For example, the BM1 has the relic density 0.092 and
+chi^2 based on Eq. (29) are 484 which is not good for thermal relic
+scenario! If my guess is true, the authors shall mention whether is
+this new region owing to the non-thermal relic assumption?
+=================================================================================
+
+4) Again, I was so looking forward to seeing the result about the life
+time of h+ and the limit of delta M in the last paragraph of Section
+3. However, the authors disappoint me by only using one paragraph with
+a lot of hand-waving. I think the authors shall present this part with
+useful figure(s). Otherwise, it is hard to drive me trust the sentence
+written in the conclusion:
+
+"At the same time, the potential of the LHC using a search for
+disappearing charged tracks is quite impressive in probing Mh1 masses
+up to about 500 GeV already at 8 TeV with 19.5 fb-1 luminosity as we
+have found in our study."
+
+=================================================================================
+Other suggestions:
+
+(i) The text is well organized and very enjoyably readable only before
+section 3
+
+but it becomes messy and hard to read after section 4. Especially, in
+the result section, many information/concepts/reasons are given
+scatteringly and all the figures are listed in the back. I believe
+that the authors should be able to make it much clear in the
+presentation. For example, they can use bullets, items, and tables for
+classification and comparison.
+
+In addition, I strongly suggest the authors to locate their figures
+before the text. The figure location can also help reader. Some less
+important figures can be integrated into an appendix.
+
+(ii) Missing the space (Fig.20, Fig.21)
+
+

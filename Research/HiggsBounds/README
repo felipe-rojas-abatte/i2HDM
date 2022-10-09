@@ -1,0 +1,5 @@
+make --makefile=$HOME/packages/higgsbounds/HiggsBounds-4.2.0/makefile
+
+
+HiggsBounds LandH effC 1 0 2IHDM_new_
+

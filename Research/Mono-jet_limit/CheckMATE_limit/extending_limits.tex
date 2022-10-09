@@ -1,0 +1,83 @@
+\documentclass[12pt,a4paper]{article}
+\hoffset=-2cm 
+\textwidth=17.5cm
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage[affil-it]{authblk}
+
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\title{Projecting 8 TeV checkmate limits to 13 TeV.}
+\maketitle
+Our 95\% CL limits from checkmate with 20.3 $fb^{-1}$ at 8 TeV is $\sim$ xxx $pb$.
+
+This means that with 10 $fb^{-1}$ at 8 TeV, $\frac{S}{\sqrt{B}} = 0.95$, where $S$ is the signal and $B$ is the background at this energy and lumniosity.
+
+At our new energy and luminosity, the new signal and background will be $B^{\prime}$ and $S^{\prime}$ respectively, and we will have
+\begin{align}
+  \frac{S^{\prime}}{\sqrt{B^{\prime}}} = \frac{S}{\sqrt{B}} = 0.95
+\end{align}
+therefore,
+\begin{align}
+  \frac{\sigma_{\text{95\%}}^{\prime} \epsilon^{\prime} \mathcal{L}^{\prime}} {\sqrt{\sigma_{b}^{\prime} \epsilon_{b}^{\prime} \mathcal{L}^{\prime}}} 
+=   \frac{\sigma_{\text{95\%}} \epsilon \mathcal{L}} {\sqrt{\sigma_{b} \epsilon_{b} \mathcal{L}}}
+\end{align}
+Where  $\sigma_{\text{95\%}}$ is the cross section limit,  $\epsilon$ is the signal efficiency,  $\mathcal{L}$ is the luminosity, $\sigma_{b}$ is the background cross section, and
+$\epsilon_{b}$ is the background efficiency, with prime or no prime indicating the original or new variables after changing the energy and luminosity.
+
+Rearranging, we get,
+\begin{align}
+  \sigma_{\text{95\%}}^{\prime} = \sqrt{\frac{\mathcal{L}}{\mathcal{L}^{\prime}}} 
+  \sqrt{\frac{\sigma_{b}^{\prime} \epsilon_{b}^{\prime}}{\sigma_{b} \epsilon_{b}}}
+  \frac{\epsilon}{\epsilon^{\prime}} \sigma_{\text{95\%}}
+\end{align}
+
+If we define $\sigma_{b,\text{cut}}^{\prime} = \sigma_{b}^{\prime} \epsilon_{b}^{\prime}$ and $\sigma_{b,\text{cut}} = \sigma_{b} \epsilon_{b}$, and also
+define $\sigma_{s}$ and $\sigma_{s,\text{cut}}$ to be the signal cross section before and after selection cuts for the old luminosity and collision energy, and 
+define $\sigma_{s}^{\prime}$ and $\sigma_{s,\text{cut}}^{\prime}$ to be the signal cross section before and after selection cuts at the new luminosity and energy,
+so that $\epsilon = \frac{\sigma_{s,\text{cut}}}{\sigma_{s}}$ and $\epsilon^{\prime} = \frac{\sigma_{s,\text{cut}}^{\prime}}{\sigma_{s}^{\prime}}$,
+we have,
+\begin{align}
+  \sigma_{\text{95\%}}^{\prime} = \sqrt{\frac{\mathcal{L}}{\mathcal{L}^{\prime}}} 
+  \sqrt{\frac{\sigma_{b,\text{cut}}^{\prime}}{\sigma_{b,\text{cut}}}}
+  \frac{\frac{\sigma_{s,\text{cut}}}{\sigma_{s}}}{\frac{\sigma_{s,\text{cut}}^{\prime}}{\sigma_{s}^{\prime}}} \sigma_{\text{95\%}}
+\end{align}
+
+\begin{align}
+  \sigma_{\text{95\%}}^{\prime} = \sqrt{\frac{\mathcal{L}}{\mathcal{L}^{\prime}}} 
+  \sqrt{\frac{\sigma_{b,\text{cut}}^{\prime}}{\sigma_{b,\text{cut}}}}
+  \frac{\sigma_{s}^{\prime}}{\sigma_{s}}
+  \frac{\sigma_{s,\text{cut}}}{\sigma_{s,\text{cut}}^{\prime}} \sigma_{\text{95\%}}
+\end{align}
+
+we now have $\sigma_{\text{95\%}}^{\prime}$ in terms of values which we can compute.
+
+In order to in incorporate a minimum background error of $0.6\% \times B$, this can be rearranged as,
+
+\begin{align}
+  \sigma_{\text{95\%}}^{\prime} = \frac{\mathcal{L}}{\mathcal{L}^{\prime}}
+  \frac{\textrm{max}\left( \sqrt{\mathcal{L}^{\prime} \sigma_{b,\text{cut}}^{\prime}}\textrm{ , } 0.006 \mathcal{L}^{\prime} \sigma_{b,\text{cut}}^{\prime} \right) }{ \sqrt{\mathcal{L} \sigma_{b,\text{cut}}}}
+  \frac{\sigma_{s}^{\prime}}{\sigma_{s}}
+  \frac{\sigma_{s,\text{cut}}}{\sigma_{s,\text{cut}}^{\prime}} \sigma_{\text{95\%}}.
+\end{align}
+
+in order to use variables already defined in our code, this can be re-written as,
+
+\begin{align}
+  \sigma_{\text{95\%}}^{\prime} = \frac{\mathcal{L}}{\mathcal{L}^{\prime}}
+  \textrm{max}\left( \frac{\sqrt{\mathcal{L}^{\prime} \sigma_{b,\text{cut}}^{\prime}}}{\sqrt{\mathcal{L} \sigma_{b,\text{cut}}}}\textrm{ , } \frac{0.006 \mathcal{L}^{\prime} \sigma_{b,\text{cut}}^{\prime}}{\sqrt{\mathcal{L} \sigma_{b,\text{cut}}}} \right)  
+  \frac{\sigma_{s}^{\prime}}{\sigma_{s}}
+  \frac{\sigma_{s,\text{cut}}}{\sigma_{s,\text{cut}}^{\prime}} \sigma_{\text{95\%}}.
+\end{align}
+\end{document}

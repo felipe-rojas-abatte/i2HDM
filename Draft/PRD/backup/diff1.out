@@ -1,0 +1,36 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{i2HDM: parameter space, model implementation, theoretical and experimental constraints}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Constraints from the Higgs potential}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Model implementation}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Constraints from perturbativity and unitarity}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Constraints from LEP and electroweak precision data}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Constraints from LHC Higgs data}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.6}{Dark Matter relic density and direct/indirect detection}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Numerical scan of the parameter space}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Results of the general scan}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Fitting the relic density}{section.3}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.1}{The low mass region}{subsection.3.2}% 12
+\BOOKMARK [2][-]{subsection.3.3}{}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.1}{The high mass region and the LHC sensitivity}{subsection.3.3}% 14
+\BOOKMARK [1][-]{section.4}{Probing Dark Matter signals from i2HDM at the LHC}{}% 15
+\BOOKMARK [2][-]{subsection.4.1}{}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Dark Matter signatures: diagrams and features}{section.4}% 17
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Mono-jet production}{subsection.4.1}% 18
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Mono-Z production}{subsection.4.1}% 19
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Mono-Higgs production}{subsection.4.1}% 20
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Vector boson fusion}{subsection.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.2}{Mono-object production: rates and comparison}{section.4}% 22
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Implementation and cuts}{subsection.4.2}% 23
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Production rates}{subsection.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.3}{Benchmark points}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.4}{Limits from LHC@8TeV and projections for LHC@13TeV}{section.4}% 26
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Implementation and the LHC data used}{subsection.4.4}% 27
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Limits from pph1h1 j}{subsection.4.4}% 28
+\BOOKMARK [3][-]{subsubsection.4.4.3}{Limits from pph1h2 j}{subsection.4.4}% 29
+\BOOKMARK [2][-]{subsection.4.5}{}{section.4}% 30
+\BOOKMARK [1][-]{section.5}{Constraining i2HDM: future projections}{}% 31
+\BOOKMARK [2][-]{subsection.5.1}{Highlighting the ``always allowed'' regions}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.2}{Highlighting the ``always excluded'' regions}{section.5}% 33
+\BOOKMARK [2][-]{subsection.5.3}{Fitting the PLANCK data: future projections}{section.5}% 34
+\BOOKMARK [1][-]{section.6}{Concluding remarks}{}% 35
+\BOOKMARK [1][-]{appendix.A}{Numerical scan: detailed discussion}{}% 36

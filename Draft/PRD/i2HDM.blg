@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: i2HDM.aux
+The style file: bib.bst
+Database file #1: bib.bib
+Warning--empty author in CMS:2015naa
+Warning--empty booktitle in CMS:2015naa
+Warning--empty publisher in CMS:2015naa
+Warning--empty author in ATLAS:2012zim
+Warning--empty booktitle in ATLAS:2012zim
+Warning--empty publisher in ATLAS:2012zim
+You've used 106 entries,
+            2125 wiz_defined-function locations,
+            1327 strings with 25088 characters,
+and the built_in function-call counts, 34762 in all, are:
+= -- 3440
+> -- 1060
+< -- 0
++ -- 424
+- -- 318
+* -- 2800
+:= -- 4901
+add.period$ -- 107
+call.type$ -- 106
+change.case$ -- 106
+chr.to.int$ -- 0
+cite$ -- 112
+duplicate$ -- 1975
+empty$ -- 3391
+format.name$ -- 318
+if$ -- 9033
+int.to.chr$ -- 0
+int.to.str$ -- 106
+missing$ -- 414
+newline$ -- 428
+num.names$ -- 104
+pop$ -- 374
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1373
+stack$ -- 0
+substring$ -- 1317
+swap$ -- 928
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 6
+while$ -- 230
+width$ -- 109
+write$ -- 1281
+(There were 6 warnings)

@@ -1,0 +1,184 @@
+\section{Introduction}
+
+The evidence for dark matter (DM) is well-established from several independent cosmological observations, 
+including galactic rotation curves, cosmic microwave background fits of the WMAP and PLANCK data, 
+gravitational lensing, large scale structure of the Universe, as well as interacting galaxy clusters such as the Bullet Cluster.
+Despite these large-scale evidences, the microscopic nature of the DM particles remains unknown,
+since no experiment so far has been able to claim their detection in the laboratory and probe their properties.
+Potentially, DM can be produced at the LHC and probed in the DM direct detection (DD) underground experiments.
+The fundamental importance and vast experimental opportunities make the search for and investigation of DM 
+one of the key goals in astroparticle physics and high energy physics (HEP), worthy of the intense efforts undertaken by the physics community.
+
+
+At the other end of the length scale, the Standard Model (SM) of particle physics recently demonstrated its vitality once again.
+The scalar boson with mass $m_H \approx 125$ GeV found at the LHC \cite{Chatrchyan:2012xdj,Aad:2012tfa} 
+closely resembles, in all its manifestations,
+the SM Higgs boson. Since the SM cannot be the ultimate theory, many constructions beyond the SM (BSM) 
+have been put forth, at different levels of sophistication. Yet, without direct experimental confirmation,
+none of them can be named the true theory beyond the SM.
+
+One way the particle theory community can respond to this situation is to propose simple, fully calculable, renormalizable BSM models 
+with viable DM candidates. We do not know yet which  of these models (if any) corresponds to reality,
+but all models of this kind offer an excellent opportunity to gain insight into the intricate interplay among various
+astrophysical and collider constraints. We call here these models Minimal Consistent Dark Matter (MCDM) models.
+MCDM models which can be  viewed as  toy models, are self-consistent and can be easily be incorporated into a bigger BSM model.
+Because of these attractive features, MCDM models can be considered as the next step beyond DM Effective Field Theory (EFT) (see e.g. \cite{Fox:2011pm,Rajaraman:2011wf,Goodman:2010ku,Bai:2010hh,Beltran:2010ww,Goodman:2010yf,Fox:2011fx,Shoemaker:2011vi,Fox:2012ru,Haisch:2012kf,Busoni:2013lha,Busoni2014a,Belyaev:2016pxe}) and simplified DM models (see e.g. \cite{Buchmueller:2013dya,Busoni:2014sya,Busoni:2014haa,Buchmueller:2014yoa,Buckley:2014fba,Abdallah:2015ter,Abdallah:2014hon,Abercrombie:2015wmb}).
+
+
+In this paper, we explore, in the light of the recent collider, astroparticle and DD DM experimental  data, 
+the inert Two-Higgs Doublet Model (i2HDM), also known as the Inert doublet model.
+This model is easily doable with analytic calculations, its parameter space is relatively small and can be strongly 
+constrained by the present and future data.
+The model leads to a variety of collider signatures, and, in spite of many years of investigation, not all of them have yet been fully and properly explored.
+It is the goal of the present paper to investigate in fine detail the present constraints and the impact of the future LHC 
+and DD DM data on the parameter space of this model.
+
+%%%%%%%%%%%%%%          basic definitions          %%%%%%%%%%%%%%%%%
+
+The i2HDM \cite{Deshpande:1977rw,Ma:2006km,Barbieri:2006dq,LopezHonorez:2006gr} is a minimalistic extension of the SM 
+with a second scalar doublet $\phi_2$ possessing the same quantum numbers as the SM Higgs doublet $\phi_1$
+but with no direct coupling to fermions (the inert doublet). 
+This construction is protected by the discrete $Z_2$ symmetry under which $\phi_2$ is odd and all the other fields are even. 
+The scalar Lagrangian is
+  \begin{equation}
+  \mathcal{L} = |D_{\mu}\phi_1|^2 + |D_{\mu}\phi_2|^2 -V(\phi_1,\phi_2)
+  \textrm{.}
+  \end{equation}
+with the potential $V$ containing all scalar interactions compatible with the $Z_2$ symmetry:
+\begin{eqnarray}
+  V &=& -m_1^2 (\phi_1^{\dagger}\phi_1) - m_2^2 (\phi_2^{\dagger}\phi_2) + \lambda_1 (\phi_1^{\dagger}\phi_1)^2 + \lambda_2 (\phi_2^{\dagger}\phi_2)^2    \nonumber  \\
+  &+&  \lambda_3(\phi_1^{\dagger}\phi_1)(\phi_2^{\dagger}\phi_2) 
+  + \lambda_4(\phi_2^{\dagger}\phi_1)(\phi_1^{\dagger}\phi_2) 
+  + \frac{\lambda_5}{2}\left[(\phi_1^{\dagger}\phi_2)^2 + (\phi_2^{\dagger}\phi_1)^2 \right]\,.\label{potential}
+\end{eqnarray}
+All free parameters here are real,\footnote{Even if we started with a complex $\lambda_5$, 
+we could redefine the second doublet via a global phase rotation, which would render $\lambda_5$ real
+without affecting any other part of the Lagrangian.} which precludes the $CP$-violation in the scalar sector.
+There is a large part of the parameter space, in which only the first, SM-like doublet, 
+acquires the vacuum expectation value (vev).
+In the notation $\langle\phi_i^0\rangle = v_i/\sqrt{2}$, this inert minimum corresponds to
+$v_1 = v$, $v_2 = 0$.
+In the unitary gauge, the doublets are expanded near the minimum as
+\begin{equation}
+\phi_1=\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+0\\
+v+H 
+\end{pmatrix}
+  \qquad
+  \phi_2= \frac{1}{\sqrt{2}}
+\begin{pmatrix}
+ \sqrt{2}{h^+} \\
+ h_1 + ih_2
+\end{pmatrix}
+\end{equation}
+The $Z_2$ symmetry is still conserved by the vacuum state, which forbids direct coupling of any single inert field to the SM fields
+and it stabilizes the lightest inert boson against decay. 
+Pairwise interactions of the inert scalars with the gauge-bosons and with the SM-like Higgs $H$ are still possible,
+which gives rise to various i2HDM signatures at colliders and in the DM detection experiments.
+
+%%%%%%%%%%%       overview of previous studies     %%%%%%%%%%%
+
+The idea that the symmetry-protected second Higgs doublet naturally produces a scalar dark matter candidate
+was first mentioned more that 30 years ago \cite{Deshpande:1977rw}.
+However, the real interest in phenomenological consequences of the i2HDM woke up in mid-2000 and intensified
+in the last few years.
+Its simplicity, predictive power, rich yet manageable parameter space, makes it an ideal playground for checking 
+its compatibility with the DM relic density, with the results of the direct and indirect DM searches,
+and with collider searches of various BSM signals.
+
+%%%%   DM related
+Assuming that the lightest inert scalar is the only DM candidate,
+one typically finds that the low-mass region, below about 50 GeV, is excluded 
+by the relic density constraints coupled with the LHC constraints on the invisible Higgs decay 
+\cite{Krawczyk:2013jta,Ilnicka:2015jba,Diaz:2015pyv}.
+The funnel region, with the DM mass close to $M_H/2$, the intermediate, 100--500 GeV, 
+and the high mass regions are still compatible with data and lead to interesting predictions at colliders.
+Additional theoretical constraints on the parameter space and DM candidate properties
+can be deduced from assumptions of full stability of the i2HDM up to the PLANCK scale
+ \cite{Chakrabarty:2015yia,Khan:2015ipa} or of multi-doublet Higgs inflation \cite{Gong:2012ri}.
+The i2HDM can also produce signals for direct \cite{Arina:2009um} and indirect DM search experiments via heavy inert scalar annihilation,
+which can be detectable via $\gamma$-rays \cite{Modak:2015uda,Queiroz:2015utg,Garcia-Cely:2015khw}
+or via its neutrino \cite{Agrawal:2008xz,Andreas:2009hj} and cosmic-ray signals \cite{Nezri:2009jd}.
+
+%%%%   cosmological consequences 
+The i2HDM can also have interesting cosmological consequences.
+Being an example of 2HDM, it possesses a rich vacuum structure, which evolves at high temperatures 
+\cite{Turok:1991uc,Cottingham:1995cj,Ginzburg:2009dp}.
+This opens up the possibility within i2HDM that the early Universe, while cooling down, 
+went through a sequence of phase transitions including strong first-order phase transitions 
+\cite{Ginzburg:2010wa,Chowdhury:2011ga,Borah:2012pu,Gil:2012ya,Dorsch:2013wja,Cline:2013bln,Blinov:2015vma}.
+Such analyses are capable of restricting the parameter space;
+for example, the recent study \cite{Blinov:2015vma} showed that combining the strong 
+first-order phase transition with other astroparticle and collider constraints gives preference to the funnel region.
+
+%%%%   collider consequences
+There has also been a number of studies on collider signatures of the i2HDM. 
+They focus either on specific processes such as SM-like Higgs decays to $\gamma\gamma$ and $\gamma Z$ 
+\cite{Arhrib:2012ia,Swiezewska:2012eh,Krawczyk:2013jta,Krawczyk:2013pea},
+multi-lepton plus missing transverse momentum ($\MET{}$) \cite{Miao:2010rg,Gustafsson:2012aj,Hashemi:2016wup}
+with as many as five leptons \cite{Datta:2016nfz},
+dijet$+\MET{}$ \cite{Poulose:2016lvz} and dileptons accompanied with dijets \cite{Hashemi:2016wup}.
+Other works present combined analyses of astroparticle and collider constraints 
+\cite{Goudelis:2013uca,Arhrib:2013ela,Ilnicka:2015jba,Alves:2016bib,Datta:2016nfz}.
+Comparing the i2HDM predictions with the electroweak precision data, 
+the measured SM-like Higgs properties, the non-observation
+of long-lived charged particles and other exotic signals, and finally the astroparticle
+observations, allows one to significantly restrict the i2HDM parameter space.
+%%% 
+The recent analysis \cite{Ilnicka:2015jba} gave a detailed account of these constraints.
+For specific benchmark points or benchmark planes in the surviving parameter space, 
+it predicted the cross section of pair production of inert scalars followed by various modes of their decay.
+As for the specific signatures of the i2HDM at the LHC, dileptons and mono-$Z$ signals were mentioned.
+An earlier analysis \cite{Arhrib:2013ela} investigated multilepton, multijet, mono-$Z$,
+and several channels for the mono-jet with large $\MET{}$.
+Ref.~\cite{Goudelis:2013uca} took into account one-loop corrections to the masses
+and, for a part of the numerical scans, included the additional theoretical constraint that 
+the perturbativity and stability be satisfied up to a large scale $\Lambda$.
+The version of i2HDM equipped with Peccei-Quinn $U(1)$ symmetry spontaneously broken to $Z_2$ 
+was investigated in \cite{Alves:2016bib}. Here, dark matter acquires a second component, the axion, 
+which changes the DM phenomenology.
+It is also possible to hunt for i2HDM at the future colliders, via searching for new scalars
+and reconstructing the potential \cite{Aoki:2013lhm} or by accurately measuring the SM-like Higgs couplings
+and deducing patterns of the deviations from the SM \cite{Kanemura:2016sos}.
+
+In the present work, to these many 
+studies on the i2HDM, we add:
+\begin{itemize}
+\item detailed combined analysis of the i2HDM model in its full five-dimensional (5D)  parameter space, taking
+into account perturbativity and unitarity,
+LEP and electroweak precision data, Higgs data from the LHC, DM relic density, direct/indirect DM detection 
+complemented by realistic (beyond-the-parton-level) LHC mono-jet analysis at the LHC;
+\item
+quantitative exploration of the surviving regions of parameters, including very fine details  and 
+qualitatively new region not seen in previous studies,
+which is enabled by our extensive numerical scans;
+%%%
+\item
+%%% modified Igor
+a combination of different processes giving the LHC mono-jet signatures: 
+those with direct DM pair production and those with associate production of DM with another scalar with a close mass
+from the inert multiplet;
+\item 
+implication of experimental LHC studies on disappearing
+charged tracks relevant to high ($\simeq 500$ GeV) DM mass region;
+\item 
+separate, equally detailed analyses for the assumptions of the DM relic density being fitted to the PLANCK results
+or under-abundant, allowing thus for additional allowed regions of the parameter space.
+\end{itemize}
+All these points above are in close focus of the present paper where we have performed a comprehensive  
+scan and study of the  full parameter space of the i2HDM model. 
+In addition we have performed an independent implementation and validation of the model in two gauges 
+including Higgs-gluon-gluon and Higgs-photon-photon effective couplings, and we made it public together with the LanHEP model source.
+
+The paper is organised as follows. 
+In Sect.~2 we discuss the i2HDM model parameter space, implementation, 
+theoretical constraints as well as constraints from LEP and electroweak precision data.
+In Sect.~3 we discuss results of a comprehensive scan of the i2HDM parameter space
+and combined constraints considering both the cases when the relic density is ``just right"
+and agrees with the PLANCK results and when it is under-abundant.
+In this section we also present the reach of  LHC studies in the high DM mass region using
+results on disappearing charged tracks.
+In Sect.~4 we present results on future projections of the LHC and DM DD experiments
+in combination with all previous constraints. Finally, in Sect.~5 we draw our conclusions.
+ 

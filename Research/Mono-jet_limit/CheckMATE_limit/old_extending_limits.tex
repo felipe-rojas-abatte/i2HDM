@@ -1,0 +1,63 @@
+\documentclass[12pt,a4paper]{article}
+\hoffset=-2cm 
+\textwidth=17.5cm
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage[affil-it]{authblk}
+
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\title{Projecting 8 TeV checkmate limits to 13 TeV.}
+\maketitle
+Our 95\% CL limits from checkmate with 10 $fb^{-1}$ at 8 TeV is $\sim$ 2 $pb$.
+
+To project to 13 TeV, and for different luminosities, we need to find how the background changes, $B \to B^{\prime}$, for new energies/luminosities, and then we can find how the signal must change, $S \to S^{\prime}$, such that the significance, $\left(\tfrac{S}{\sqrt{B}} \right)$ is unchanged (at the level giving a 95\% CL).
+
+i.e. we need to predict how the background, $B$, changes, and then we find the new signal, $S^{\prime}$ that keeps the significance the same (at the 95\% level),\\
+\begin{equation}
+  \tfrac{S}{\sqrt{B}} = \tfrac{S^{\prime}}{\sqrt{B^{\prime}}}
+\end{equation}
+where $B$ is the original background, $B^{\prime}$ is the background at the new enrgy/luminosity, $S$ is the original signal ruled out at the 95\% CL and $S^{\prime}$ is the new signal ruled out at a 95\% CL.
+
+For our signal, we have that 
+\begin{center}
+$\sigma_{\rm 8 TeV} = 8 $ fb\\
+$\sigma_{\rm 13 TeV} = 50$ fb\\
+\end{center}
+
+Assuming the background scales in a similar manner, we therefore assume that going from 10 $fb^{-1}$ of data at 8 TeV to 10 $fb^{-1}$ of data at 13 TeV, the background scales as $B^{\prime} = \frac{50}{8} B = 6.25 B$, giving\\
+\begin{equation}
+  \frac{S}{\sqrt{B}} \to \frac{S}{\sqrt{B^{\prime}}} = \frac{S}{\sqrt{6.25 B}}
+\end{equation}
+
+To compare this with the Brasil predictions, we then scale this from 10 $fb^{-1}$ to 5 $fb^{-1}$, which then halves the predictied background,\\
+\begin{equation}
+  \frac{S}{\sqrt{6.25 B}} \to \frac{S}{\sqrt{\tfrac{6.25}{2}B}} = 0.57 \times \frac{S}{\sqrt{B}}
+\end{equation}
+Therefore, to maintain the same 95\% significance,
+
+\begin{align}
+  S^{\prime} = 0.57 \times S = 0.57 \times 2 ~pb = 1.14 ~pb
+\end{align}
+which we can compare to the limit of around around 1.4 $pb$ from the Brasilians for 13 TeV with 5 $fb^{-1}$ of data.
+
+The procedure can be continued, to take into account larger luminosities, for example to go from 10 $fb^{-1}$ at 13 TeV to 300 $fb^{-1}$ at 13 TeV,
+\begin{align}
+  \frac{S}{\sqrt{6.25 B}} \to \frac{S}{\sqrt{30 \times 6.25 B}} = 0.07 \times \frac{S}{\sqrt{B}}
+\end{align}
+which gives a limit, for 300 $fb^{-1}$ at 13 TeV, of
+\begin{align}
+  S^{\prime} = 0.07 \times S = 0.07 \times 2 ~pb = 0.14 ~pb.
+\end{align}
+\end{document}

@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: diff1.aux
+The style file: JHEP-2.bst
+Database file #1: bib.bib
+Warning--empty author in ATLAS:2012zim
+You've used 102 entries,
+            2125 wiz_defined-function locations,
+            1284 strings with 24213 characters,
+and the built_in function-call counts, 31582 in all, are:
+= -- 3086
+> -- 1023
+< -- 0
++ -- 409
+- -- 307
+* -- 2560
+:= -- 4518
+add.period$ -- 103
+call.type$ -- 102
+change.case$ -- 102
+chr.to.int$ -- 0
+cite$ -- 103
+duplicate$ -- 1751
+empty$ -- 3055
+format.name$ -- 307
+if$ -- 8145
+int.to.chr$ -- 0
+int.to.str$ -- 102
+missing$ -- 394
+newline$ -- 410
+num.names$ -- 101
+pop$ -- 334
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1196
+stack$ -- 0
+substring$ -- 1163
+swap$ -- 802
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 212
+width$ -- 105
+write$ -- 1190
+(There was 1 warning)
